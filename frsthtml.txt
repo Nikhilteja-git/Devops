@@ -1,0 +1,11 @@
+<!Doctype html>
+<html>
+<head>
+<title>this is html page</title>
+</head>
+
+<p> paragragh of html pages</p>
+<h1>this is heading page</h1>
+
+</body>
+</html>
