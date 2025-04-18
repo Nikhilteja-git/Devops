@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bus-tracker-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: bus-tracker
+  template:
+    metadata:
+      labels:
+        app: bus-tracker
+    spec:
+      containers:
+      - name: bus-tracker
+        image: yourname/bus-tracker:1.0
+        ports:
+        - containerPort: 8080
